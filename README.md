@@ -6,6 +6,13 @@ This repository consists of two different projects:
 - easyboot: the bootloader
 - blink: a sophisticated million dollars blinky application
 
+Usage
+=====
+
+Build the two separate applications and flash them. Use either `app1` or `app2`
+shield for blink application but you should flash both to complete the
+experiment.
+
 Partitions
 ==========
 
