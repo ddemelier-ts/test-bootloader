@@ -1,0 +1,2 @@
+#include "../../nrf54l15-serial.overlay"
+#include "../../nrf54l15-partitions.overlay"

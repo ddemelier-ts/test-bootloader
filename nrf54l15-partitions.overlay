@@ -1,0 +1,29 @@
+&cpuapp_rram {
+    /delete-node/ partitions;
+
+    partitions {
+        compatible = "fixed-partitions";
+        #address-cells = < 0x1 >;
+        #size-cells = < 0x1 >;
+
+        boot: boot@0 {
+            label = "boot";
+            reg = <0x0 0x8000>;
+        };
+
+        settings: settings@8000 {
+            label = "settings";
+            reg = <0x8000 0x4000>;
+        };
+
+        app1: app1@C000 {
+            label = "app1";
+            reg = <0xC000 0xAC800>;
+        };
+
+        app2: app2@B8800 {
+            label = "app2";
+            reg = <0xB8800 0xAC800>;
+        };
+    };
+};
